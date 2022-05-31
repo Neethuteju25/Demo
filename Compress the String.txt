@@ -1,0 +1,14 @@
+Compress the string
+
+
+string =raw_input()
+current = string[0]
+count = 0
+for i in xrange(len(string)):
+    if string[i] == current:
+        count+=1
+    else:
+        print"(%d, %s)" % (count,current),
+        current=string[i]  
+        count=1      
+print "(%d, %s)" % (count,current)     
